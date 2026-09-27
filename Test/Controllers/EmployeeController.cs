@@ -21,7 +21,7 @@ namespace Test.Controllers
 
         // GET: api/Employee
         [HttpGet]
-    
+    [DisableRateLimiting]
         public async Task<IActionResult> GetAll()
         {
             try
@@ -43,6 +43,7 @@ namespace Test.Controllers
 
         // GET: api/Employee/{id}
         [HttpGet("{id}")]
+        [DisableRateLimiting]
         public async Task<IActionResult> GetById(int id)
         {
             try
