@@ -21,7 +21,7 @@ namespace Test.Controllers
 
         // GET: api/Employee
         [HttpGet]
-    [DisableRateLimiting]
+    
         public async Task<IActionResult> GetAll()
         {
             try
